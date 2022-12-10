@@ -21,3 +21,23 @@ jobs:
 
       - name: Show files
         run: ls -la && du -sh index.json
+
+      - name: Upload Index
+        env:
+          ALGOLIA_SECRET: ${{ secrets.ALGOLIA_SECRET }}
+        run: node scripts/upload-index.js
+
+      # - name: Get deleted files
+      #   id: get-deleted-files
+      #   uses: tj-actions/changed-files@v25
+      #   with:
+      #     # Refer https://github.com/tj-actions/changed-files#inputs
+      #     # To know about following parameters
+      #     json: true
+      #     files: content/
+      #     # to include the old names of the renamed files
+      #     include_all_old_new_renamed_files: true
+      #     # separater between two different files renamed
+      #     old_new_files_separator: ":"
+      #   env:
+      #     # HOME: "/actions-runner/_work/docs/docs"

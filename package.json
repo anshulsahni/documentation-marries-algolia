@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "algoliasearch": "4.14.2",
     "lorem-ipsum": "2.0.8",
     "remark": "14.0.2",
     "unist-util-visit": "4.1.1"
