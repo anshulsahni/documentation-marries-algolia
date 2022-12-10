@@ -34,13 +34,13 @@ jobs:
           # Refer https://github.com/tj-actions/changed-files#inputs
           # To know about following parameters
           json: true
-          files: content/
+          files: content
           # to include the old names of the renamed files
           include_all_old_new_renamed_files: true
           # separater between two different files renamed
           old_new_files_separator: ":"
-        # env:
-          # HOME: "/actions-runner/_work/docs/docs"
+        env:
+          HOME: "/home/runner/work/documentation-marries-algolia/documentation-marries-algolia"
 
       - name: Remove deleted files
         env:
