@@ -15,7 +15,7 @@ jobs:
       - run: npm install
 
       - name: Build index
-        run: node scripts/buid-index.js
+        run: node scripts/build-index.js
 
       - name: Show files
         run: ls -la && du -sh index.json
