@@ -67,13 +67,13 @@ function getSubRecords(record, leafType) {
     ...restProps,
     content: content.substring(0, content.length / 2),
     objectID: getObjectId(`${record.url}${leafType + "l"}`),
-    hashInput: `${record.url}${leafType + "l"}`,
+    hashInput: `${record.path}${leafType + "l"}`,
   };
   const subRecord2 = {
     ...restProps,
     content: content.substring(content.length / 2),
     objectID: getObjectId(`${record.url}${leafType + "r"}`),
-    hashInput: `${record.url}${leafType + "r"}`,
+    hashInput: `${record.path}${leafType + "r"}`,
   };
   return { subRecord1, subRecord2 };
 }
