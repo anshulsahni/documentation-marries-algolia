@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "lorem-ipsum": "2.0.8",
+    "remark": "14.0.2",
+    "unist-util-visit": "4.1.1"
+  },
+  "name": "documentation-marries-algolia",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshulsahni/documentation-marries-algolia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anshulsahni/documentation-marries-algolia/issues"
+  },
+  "homepage": "https://github.com/anshulsahni/documentation-marries-algolia#readme",
+  "description": ""
+}

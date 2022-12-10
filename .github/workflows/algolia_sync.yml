@@ -1,0 +1,21 @@
+name: Sync with Algolia search
+
+on:
+  push:
+    paths:
+      - content/**
+
+jobs:
+  algolia-search-sync:
+    name: Sync with Algolia Search
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: npm install
+
+      - name: Build index
+        run: node scripts/buid-index.js
+
+      - name: Show files
+        run: ls -la && du -sh index.json
