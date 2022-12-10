@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - content/**
+      - .github/workflows/production-search-sync.yml
+      - scripts/*
 
 jobs:
   algolia-search-sync:
