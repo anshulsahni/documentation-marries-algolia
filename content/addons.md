@@ -8,7 +8,7 @@ _Addons_ are dynamically-linked shared objects written in C++. The
 [`require()`][require] function can load addons as ordinary Node.js modules.
 Addons provide an interface between JavaScript and C/C++ libraries.
 
-There are 3 options for implementing addons: Node-API, nan, or direct
+There are three options for implementing addons: Node-API, nan, or direct
 use of internal V8, libuv, and Node.js libraries. Unless there is a need for
 direct access to functionality which is not exposed by Node-API, use Node-API.
 Refer to [C/C++ addons with Node-API](n-api.md) for more information on
